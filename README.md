@@ -27,3 +27,25 @@ Cette fonction permet de relier deux chaine de caractères différentes, Et pren
 ## int ComparerChaines(const char* chaine1, const char* chaine2);
 ## void ConvertirMinuscules(char* chaine);
 ## bool EstChaineNumerique(const char* chaine);
+
+### La compilation se passe comme suite : 
+
+```bash
+# Compilation simple
+clang++ main.cpp -o programme
+
+# Compilation avec tous les warnings
+clang++ -Wall -Wextra -Wpedantic main.cpp -o programme
+
+# Compilation recommandée pour ce projet
+clang++ -Wall -Wextra -Wpedantic -std=c++17 -g -o manipulation_chaines main.cpp
+
+# Exécution
+./manipulation_chaines
+
+# Vérification de la version
+clang++ --version
+
+# Débogage avec LLDB
+lldb ./manipulation_chaines
+```
